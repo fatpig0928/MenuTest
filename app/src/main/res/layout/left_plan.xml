@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计划共有"
+            android:padding="10dp"
+            android:background="@drawable/corner_bg"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/start_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:textSize="27dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@id/days"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/end_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成时间"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:textSize="27dp"
+            android:layout_below="@id/days"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/startDateDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/start_tip"
+            android:text="2017年5月30日"
+            android:textSize="16dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/endDateDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/end_tip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="52dp"
+            android:text="2017年9月13日"
+            android:textSize="16dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/endDateChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改完成时间"
+            android:layout_below="@+id/startDateDisplay"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:textSize="16dp"
+            android:padding="8dp"
+            android:background="@drawable/corner_bg_yellow"/>
+
+        <TextView
+            android:id="@+id/dayWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每天需要背诵  个单词"
+            android:layout_below="@+id/endDateChoose"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:background="@drawable/corner_bg"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background">
+
+
+    <ImageButton
+        android:id="@+id/add_new_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/star"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/learn_basic"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_new_word"
+        android:gravity="left">
+
+
+        <TextView
+            android:id="@+id/query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_marginLeft="25dp"
+            android:text="单词"/>
+
+        <TextView
+            android:id="@+id/phonetic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_below="@id/query"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:text="音标"/>
+
+        <TextView
+            android:id="@+id/translation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_below="@id/phonetic"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:text="释义"/>
+
+        <ImageView
+            android:id="@+id/img_help"
+            android:layout_width="155dp"
+            android:layout_height="113dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/translation"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/resolve_x" />
+
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/learn_extra"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:layout_marginBottom="85dp"
+        android:layout_below="@id/learn_basic"
+        android:background="@drawable/corner_bg">
+
+
+        <TextView
+            android:id="@+id/img_example"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/example"
+            android:text="例句"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/example"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="例句"
+            android:layout_alignTop="@+id/img_example"
+            android:layout_toRightOf="@+id/img_example"
+            android:layout_marginStart="7dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <TextView
+            android:id="@+id/img_mnemonic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/example"
+            android:text="助记"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="@drawable/example" />
+
+        <TextView
+            android:id="@+id/mnemonic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="absolve 免罪\ndissolve 溶解\ndissolute 放荡\nresolve 解决、决心、溶解\nresolute 坚决的"
+            android:layout_toRightOf="@+id/img_mnemonic"
+            android:layout_alignTop="@+id/img_mnemonic"
+            android:layout_marginStart="7dp"
+            android:lineSpacingMultiplier="1.2"/>
+
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/before_one"
+            android:background="@drawable/corner_bg_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:text="上一个"
+            android:textStyle="bold"
+            android:textSize="14sp">
+        </Button>
+
+        <Button
+            android:id="@+id/next_one"
+            android:background="@drawable/corner_bg_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:textStyle="bold"
+            android:text="继续学习"
+            android:textSize="14sp"
+            android:textColor="#ffffff">
+        </Button>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
